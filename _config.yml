@@ -7,14 +7,14 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sunwen's Blog"
+title                    : "SunWen's Blog"
 title_separator          : "-"
-name                     : "Sun Wen"
-description              : "一场神奇的冒险！"
+name                     : "SunWen"
+description              : "总结、记录、分享、交流、提高"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "mm.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -34,6 +34,19 @@ google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Social Sharing
 twitter:
@@ -65,7 +78,7 @@ google_ad_slot           :
 author:
   name             : "Sun Wen"
   avatar           : "bio-photo.jpg"
-  bio              : "一场神奇的冒险."
+  bio              : "时空漫游者"
   location         : "Shanghai"
   email            : "burningwen@hotmail.com"
   uri              :
